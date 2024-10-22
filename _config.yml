@@ -1,8 +1,13 @@
 # WhatATheme
 markdown: kramdown
 
+kramdown:
+  input: GFM # GitHub Flavored Markdown 사용
+  hard_wrap: false
+  enable_coderay: false
+
 # URL of the Site
-url: ''
+url: ""
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl:
 
@@ -27,7 +32,7 @@ facebook_username:
 twitter_username:
 instagram_username:
 linkedin_username:
-github_username:  JayJHFE
+github_username: JayJHFE
 youtube_channel_id:
 reddit_username: /
 behance_username: /
@@ -68,18 +73,16 @@ compress_html:
 
 # Defaults
 defaults:
-  -
-    scope:
-      type: 'posts'
+  - scope:
+      type: "posts"
     values:
       layout: post
       post-image: ""
       description: ""
       tags:
         - ""
-  -
-    scope:
-      type: 'pages'
+  - scope:
+      type: "pages"
     values:
       layout: page
 
