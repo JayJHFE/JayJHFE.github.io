@@ -20,8 +20,8 @@ permalink: /resume/
 
 - **Phone**: 010-4421-9244
 - **Email**: dove92lee@gmail.com
-- **Blog**: [jaytech-fe.tistory.com](https://jaytech-fe.tistory.com/)
-- **GitHub**: [github.com/JayJHFE](https://github.com/JayJHFE)
+- **Blog**: &nbsp;[jaytech-fe.tistory.com](https://jaytech-fe.tistory.com/)
+- **GitHub**: &nbsp;[github.com/JayJHFE](https://github.com/JayJHFE)
 
 <br/>
 
@@ -47,7 +47,7 @@ permalink: /resume/
 
 # About Me
 
-- **꼼꼼함**: 한 가지의 기능개발에도 열중하며 최소한의 사이드이펙트를 생각하빈다
+- **꼼꼼함**: 한 가지의 기능개발에도 열중하며 최소한의 사이드이펙트를 생각합니다.
 - **협업성**: 개발함에 있어, 레거시 여부와 상관없이 주석을 통한 유지보수를 생각하고 추후 필요한 내용까지 고려합니다
 - **꾸준함**: 한번 맡은 일은 끝까지 꾸준하게 고민하고 책임지려고 노력합니다
 

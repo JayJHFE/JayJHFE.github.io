@@ -1,74 +1,111 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css");
 
 html,
 body {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth !important;
-    transition: all 0.25s ease;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth !important;
+  transition: all 0.25s ease;
 }
-
-
 
 /* width */
 ::-webkit-scrollbar {
-    width: 0.5vmax !important;
+  width: 0.5vmax !important;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: white !important;
+  background: white !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #363636 !important;
+  background: #363636 !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: black !important;
+  background: black !important;
 }
 
 ::placeholder {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #navbar {
-    .navbar-burger {
-        span:nth-child(2) {
-            left: calc(50%);
-            width: 8px;
-        }
+  .navbar-burger {
+    span:nth-child(2) {
+      left: calc(50%);
+      width: 8px;
     }
+  }
 }
 
 .is-active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .columns {
-    .button {
-        margin: 0.5rem !important;
-    }
+  .button {
+    margin: 0.5rem !important;
+  }
 }
 
 hr {
-    margin: 1rem auto;
-    height: 1px;
+  margin: 1rem auto;
+  height: 1px;
 }
 
 .column {
-    margin: auto 0.5rem;
-    padding: 0.5rem;
+  margin: auto 0.5rem;
+  padding: 0.5rem;
 }
 
 .searchResult {
-    a {
-        .title {
-            text-decoration: underline;
-        }
+  a {
+    .title {
+      text-decoration: underline;
     }
+  }
+}
+ul {
+  list-style: none; /* 기본 점 스타일 제거 */
+  padding: 0; /* 기본 패딩 제거 */
+}
+
+ul li {
+  margin-bottom: 10px; /* 리스트 항목 간의 간격 설정 */
+  display: flex; /* 텍스트와 아이콘이 같은 줄에 오도록 설정 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+ul li:before {
+  content: "•"; /* 점 대신 다른 기호를 사용할 수도 있습니다 */
+  margin-right: 10px; /* 텍스트와 점 사이의 간격 조정 */
+}
+ul li strong {
+  font-weight: bold; /* 강제 굵기 적용 */
+  margin-right: 5px; /* 텍스트와 제목 사이 간격 조정 */
+}
+
+ul li a {
+  text-decoration: none; /* 링크에서 밑줄 제거 */
+}
+.project-title {
+  text-align: left; /* 제목을 왼쪽 정렬 */
+  font-size: 1.5rem; /* 제목 크기 */
+  margin-bottom: 10px; /* 제목과 내용 사이 간격 */
+  padding-left: 20px; /* 제목의 들여쓰기 설정 */
+  padding-left: 270px;
+  font-weight: bold;
+}
+
+.project-content {
+  padding-left: 20px; /* 내용의 들여쓰기 설정 */
+  line-height: 1.6; /* 줄 간격을 넓혀 가독성 향상 */
+}
+.project-content ul {
+  padding-left: 0; /* 리스트 자체는 왼쪽에 붙여서 정렬 */
+  margin-left: 0; /* 기본 여백 제거 */
 }
