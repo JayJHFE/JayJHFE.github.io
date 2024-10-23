@@ -6,7 +6,7 @@ permalink: /resume/
 
 # 프론트엔드 개발자 이주현
 
-<img src="https://private-user-images.githubusercontent.com/114391411/379138950-8b1b89ea-9451-4c57-bbe2-4874b5b482c6.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk2Njc0NjgsIm5iZiI6MTcyOTY2NzE2OCwicGF0aCI6Ii8xMTQzOTE0MTEvMzc5MTM4OTUwLThiMWI4OWVhLTk0NTEtNGM1Ny1iYmUyLTQ4NzRiNWI0ODJjNi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAyM1QwNzA2MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YTIwMjRiYzMyYmU1ZjVkMWVhMzMyOTBiNzg5Yzc2Y2NhOTA1NjA4NWRkZjc5ZGJjYWJhZDMxMDgxZDk3NmY0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.VfG8ymXIyU3H9E72gy0LFDjx0R2VDDp0YfXiX6C3JTk" style="border-radius:15px" alt="프로필 이미지" width="300">
+<img src="/assets/images/me.jpg" style="border-radius:15px" alt="프로필 이미지" width="300">
 
 # <span style="color: brown; font-weight: bold;">자기소개</span>
 
