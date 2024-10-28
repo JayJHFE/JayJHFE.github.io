@@ -49,13 +49,19 @@ permalink: /resume/
 > - 수행기간: 2024.09 ~ 2024. 10 ( 약 1개월 소요)
 > - 주요역할: 웹 프론트엔드 업무 - php를 통한 쿼리조회로 자사 서비스 내 등록된 모든 서비스의 요금 조회 및 등록 간편화 &nbsp;&nbsp;&nbsp;
 > - 업무성과: 요금 생성 시 사용자의 불편함 해소
+> - 사용스택: php, jquery, javascript, MySQL
+
+<img src="https://github.com/user-attachments/assets/919155a0-c2e3-4679-a9f8-4efeb5ae87d3" alt="요금복사 gif" width="870" height="auto" />
 
 ### <span style="color: blue; font-weight: bold;">프로젝트명 : 존 자동생성</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 > - 연계/소속회사: 그라운드케이
 > - 수행기간: 2024.07 ~ 2024. 09 ( 약 2개월 소요)
 > - 주요역할: 웹 프론트엔드 업무 - Google polygon과 drawing manger를 통한 선택지역 자동 polygon 생성 및 수정
-> - 업무성과: 존생성 시 사용자의 불편함 해소 및 존에 정확한 지역 바운더리 적용
+> - 업무성과: 지역별 자동 바운더리 적용,쿼리를 통한 DB조회 시 성능이슈를 고려한 좌표축소처리
+> - 사용스택: php, jquery, javascript
+
+<img src="https://github.com/user-attachments/assets/88362599-1747-4d41-8131-931d7146a03f" alt="존생성 gif" width="870" height="auto" />
 
 ### <span style="color: blue; font-weight: bold;">프로젝트명 : 제주드림타워 스케줄러,재고관리 기능 개발(자사 솔루션)</span>
 
@@ -63,20 +69,29 @@ permalink: /resume/
 > - 수행기간: 2023.12 ~ 2024. 02 ( 약 3개월 소요)
 > - 주요역할: 웹 프론트엔드 업무 - UI 개선, 스케쥴러 라이브러리(100만원 상당)의 스케쥴러,재고관리 자체개발 개발 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 > - 업무성과: 제주 드림타워 계약체결, 부산세계탁구선수권대회 자사 솔루션사용 및 해당 기능 솔루션 전체적용
+> - 사용스택: php,jquery,javascript
+
+<img src="https://github.com/user-attachments/assets/1c37ff73-2ecf-43fa-b21a-c20a5a40971e" alt="스케줄러 gif" width="870" height="auto" />
 
 ### <span style="color: blue; font-weight: bold;">프로젝트명 : 자사 솔루션 쿠폰 기능 개발</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 > - 연계/소속회사 : 그라운드케이, RoundT, GBLIMOUSINE
-> - 수행기간 : 2024.02 ~ 2024.04 (약 1개월)
+> - 수행기간: 2024.02 ~ 2024.04 (약 1개월)
 > - 주요역할: 웹 프론트엔드 업무 - UI 생성 및 쿼리문을 통한 데이터 가공
 > - 업무성과: 자사 솔루션을 이용한 모든 회사에 쿠폰 기능 적용 및 쿠폰관리 기능 추가 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+> - 사용스택: php,jquery,javascript
+
+<img src="https://github.com/user-attachments/assets/d18f6176-8cb9-478a-929e-7c14e64f45f7" alt="쿠폰 gif" width="870" height="auto" />
 
 ### <span style="color: blue; font-weight: bold;">프로젝트명 : 자사 솔루션 변경이력 관리 기능 개발</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 > - 연계/소속회사 : 그라운드케이, 소속 협력사
-> - 수행기간 : 2024.05 ~ 2024.07 (약 3개월)
+> - 수행기간: 2024.05 ~ 2024.07 (약 3개월)
 > - 주요역할: 웹 프론트엔드 업무 - UI생성, PHP를 사용한 데이터 가공, 쿼리문을 통한 mySQL DB 사용
 > - 업무성과: 자사 솔루션을 사용하는 모든 회사에 대한 변경이력 관리 적용, 변경이력관리를 통한 솔루션 고도화 및 빠른 정보파악
+> - 사용스택: php,jquery,javascript
+
+<img src="https://github.com/user-attachments/assets/5296aad0-4da5-4d7c-8990-e645b308f2f2" alt="변경이력 gif" width="870" height="auto" />
 
 ### <span style="color: blue; font-weight: bold;">프로젝트명 : RoundT(Golf T의 공항 => CC 예약 웹사이트 개발)</span> &nbsp;&nbsp;&nbsp;
 
@@ -84,6 +99,9 @@ permalink: /resume/
 > - 수행기간: 2023.08 ~ 2023.11 ( 약 3개월 소요)
 > - 주요역할: 웹 프론트엔드 업무 - 결제연동, 데이터바인딩, Timepicker, datepicker 개발, map연동 및 map기능 개발 &nbsp;&nbsp;&nbsp;&nbsp;
 > - 업무성과: golfT와의 계약체결 및 golfT 골프대회 예약페이지로 해당웹페이지 사용
+> - 사용스택: react, typescript
+
+<img src="https://github.com/user-attachments/assets/d4273c7e-37ab-481e-8b3f-0184e0e3d151" alt="라운드티 gif" width="870" height="auto" />
 
 ### <span style="color: blue; font-weight: bold;">프로젝트명 : AsianDefense GBLIMOUSINE 차량예약 페이지 개발</span>
 
@@ -91,6 +109,7 @@ permalink: /resume/
 > - 수행기간: 2023.06 ~ 2023.08 ( 약 2개월 소요)
 > - 주요역할: 웹 프론트엔드 업무 - api를 통한 데이터바인딩 및 ui 오류수정 및 ux 개선 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 > - 업무성과: gblimousine의 자사솔루션 사용(계약체결)
+> - 사용스택: php,jquery,javascript
 
 ### 개인 프로젝트
 
@@ -105,6 +124,7 @@ permalink: /resume/
 
 > - **기능 구현**: react를 활용한 간단한 틱택토 게임구현&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 > - **구현 목적**: react활용을 위한 프로젝트
+> - **사용 스택**: react, vite, typescript, redux
 > - **GitHub**: &nbsp;[react-TicTacToe](https://github.com/JayJHFE/TicTacToe)
 
 ### <span style="color: blue; font-weight: bold;">Project: 카페모아 (Cafemoa)</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
