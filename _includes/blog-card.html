@@ -1,14 +1,184 @@
-<div class="columns has-text-centered" id="blog-card">
+<!-- Blog Posts Cards -->
+<div class="container">
+  <div class="columns is-multiline">
+    {% for post in paginator.posts %}
+    <div class="column is-full">
+      <a
+        href="{{ post.url | relative_url }}"
+        style="text-decoration: none; color: inherit"
+      >
+        <div
+          class="card"
+          style="
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+          "
+        >
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <!-- 포스트 이미지 -->
+              <div class="column is-narrow">
+                {% if post.post-image %}
+                <figure
+                  class="image is-128x128"
+                  style="border-radius: 8px; overflow: hidden"
+                >
+                  <img
+                    src="{{ post.post-image }}"
+                    alt="{{ post.title }}"
+                    style="object-fit: cover"
+                  />
+                </figure>
+                {% else %}
+                <figure
+                  class="image is-128x128"
+                  style="
+                    border-radius: 8px;
+                    overflow: hidden;
+                    background-color: #f5f5f5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="fas fa-file-alt"
+                    style="font-size: 2rem; color: #ccc"
+                  ></i>
+                </figure>
+                {% endif %}
+              </div>
+
+              <!-- 포스트 내용 -->
+              <div class="column">
+                <h2
+                  class="title is-4"
+                  style="margin-bottom: 0.5rem; color: #363636"
+                >
+                  {{ post.title }}
+                </h2>
+
+                <p
+                  class="subtitle is-6 has-text-grey"
+                  style="margin-bottom: 1rem"
+                >
+                  {{ post.description | default: post.excerpt | strip_html |
+                  truncate: 150 }}
+                </p>
+
+                <div class="tags" style="margin-bottom: 0.5rem">
+                  {% for tag in post.tags limit:3 %}
+                  <span class="tag is-light">{{ tag }}</span>
+                  {% endfor %}
+                </div>
+
+                <div
+                  class="is-flex is-justify-content-space-between is-align-items-center"
+                >
+                  <small class="has-text-grey">
+                    <i class="fas fa-calendar"></i>
+                    {{ post.date | date: "%Y년 %m월 %d일" }}
+                  </small>
+                  <span
+                    class="button is-small is-primary is-outlined"
+                    style="pointer-events: none"
+                  >
+                    읽어보기 →
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- 페이지네이션 -->
+  {% if paginator.total_pages > 1 %}
+  <nav
+    class="pagination is-centered"
+    role="navigation"
+    aria-label="pagination"
+    style="margin-top: 3rem"
+  >
+    {% if paginator.previous_page %}
+    <a
+      href="{{ paginator.previous_page_path | relative_url }}"
+      class="pagination-previous"
+      >이전</a
+    >
+    {% else %}
+    <span class="pagination-previous" disabled>이전</span>
+    {% endif %} {% if paginator.next_page %}
+    <a
+      href="{{ paginator.next_page_path | relative_url }}"
+      class="pagination-next"
+      >다음</a
+    >
+    {% else %}
+    <span class="pagination-next" disabled>다음</span>
+    {% endif %}
+
+    <ul class="pagination-list">
+      {% for page in (1..paginator.total_pages) %} {% if page == paginator.page
+      %}
+      <li>
+        <a
+          class="pagination-link is-current"
+          aria-label="Page {{ page }}"
+          aria-current="page"
+          >{{ page }}</a
+        >
+      </li>
+      {% elsif page == 1 %}
+      <li>
+        <a
+          href="{{ '/' | relative_url }}"
+          class="pagination-link"
+          aria-label="Goto page {{ page }}"
+          >{{ page }}</a
+        >
+      </li>
+      {% else %}
+      <li>
+        <a
+          href="{{ site.paginate_path | relative_url | replace: ':num', page }}"
+          class="pagination-link"
+          aria-label="Goto page {{ page }}"
+          >{{ page }}</a
+        >
+      </li>
+      {% endif %} {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+</div>
+
+<!-- 포스트가 없을 경우 -->
+{% if site.posts.size == 0 %}
+<div class="container has-text-centered" style="padding: 3rem">
+  <p class="subtitle">아직 작성된 블로그 포스트가 없습니다.</p>
+</div>
+{% endif %}
+
+<style>
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+  }
+</style>
+
+<a href="https://game-info-dash-board-x5wv.vercel.app" style="text-decoration: none; color: inherit;">
+<div class="columns has-text-centered" id="blog-card" style="transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;">
   <div
     class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet image is-16by9"
     style="background-image: url('/assets/images/LolGameDashBoard.png'); background-size: cover;"
   >
-    <a href="https://game-info-dash-board-x5wv.vercel.app">
-      <!-- <div
-        class="image is-16by9"
-        style="background-image: url('/assets/images/LolGameDashBoard.png'); background-size: cover;"
-      ></div> -->
-    </a>
   </div>
   <div class="column has-text-left-desktop has-text-left-tablet">
     <h1 class="title is-size-4-touch"></h1>
@@ -30,25 +200,22 @@
         Published
         on
         <span class="has-text-weight-semibold"
-          >{{ post.date | date: "%-B %d, %Y" }}</span
-        ></span
-      >
-      | <i class="fas fa-clock"></i>
-      <span class="has-text-weight-semibold"> Vercel </span>
+          >2024년 11월</span
+        >
+        | <i class="fas fa-clock"></i>
+        <span class="has-text-weight-semibold"> Vercel </span>
+      </span>
     </div>
   </div>
 </div>
-<div class="columns has-text-centered" id="blog-card">
+</a>
+
+<a href="https://react-scheduler-five.vercel.app/scheduler" style="text-decoration: none; color: inherit;">
+<div class="columns has-text-centered" id="blog-card" style="transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;">
   <div
     class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet image is-16by9"
     style="background-image: url('/assets/images/schedulerImage.png'); background-size: cover;"
   >
-    <a href="https://react-scheduler-five.vercel.app/scheduler">
-      <!-- <div
-        class="image is-16by9"
-        style="background-image: url('/assets/images/schedulerImage.png'); background-size: cover;"
-      ></div> -->
-    </a>
   </div>
   <div class="column has-text-left-desktop has-text-left-tablet">
     <h1 class="title is-size-4-touch"></h1>
@@ -69,24 +236,25 @@
         Published
         on
         <span class="has-text-weight-semibold"
-          >{{ post.date | date: "%-B %d, %Y" }}</span
-        ></span
-      >
-      | <i class="fas fa-clock"></i>
-      <span class="has-text-weight-semibold"> Vercel </span>
+          >2024년 10월</span
+        >
+        | <i class="fas fa-clock"></i>
+        <span class="has-text-weight-semibold"> Vercel </span>
+      </span>
     </div>
   </div>
 </div>
-<div class="columns has-text-centered" id="blog-card">
+</a>
+
+<a href="https://github.com/JayJHFE/TicTacToe" style="text-decoration: none; color: inherit;">
+<div class="columns has-text-centered" id="blog-card" style="transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;">
   <div
     class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet"
   >
-    <a href="https://github.com/JayJHFE/TicTacToe">
-      <div
-        class="image is-16by9"
-        style="background-image: url('/assets/images/tictactoe.png')"
-      ></div>
-    </a>
+    <div
+      class="image is-16by9"
+      style="background-image: url('/assets/images/tictactoe.png'); background-size: cover;"
+    ></div>
   </div>
   <div class="column has-text-left-desktop has-text-left-tablet">
     <h1 class="title is-size-4-touch"></h1>
@@ -99,24 +267,25 @@
         해당 기능에 구현한 비즈니스 로직을 파악하려고 노력하였습니다.
         </br>Published on
         <span class="has-text-weight-semibold"
-          >{{ post.date | date: "%-B %d, %Y" }}</span
-        ></span
-      >
-      | <i class="fas fa-clock"></i>
-      <span class="has-text-weight-semibold"> Github </span>
+          >2024년 09월</span
+        >
+        | <i class="fas fa-clock"></i>
+        <span class="has-text-weight-semibold"> Github </span>
+      </span>
     </div>
   </div>
 </div>
-<div class="columns has-text-centered" id="blog-card">
+</a>
+
+<a href="https://github.com/code-bootcamp/cafemoa-client" style="text-decoration: none; color: inherit;">
+<div class="columns has-text-centered" id="blog-card" style="transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;">
   <div
     class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet"
   >
-    <a href="https://github.com/code-bootcamp/cafemoa-client">
-      <div
-        class="image is-16by9"
-        style="background-image: url('/assets/images/cafemoa.png')"
-      ></div>
-    </a>
+    <div
+      class="image is-16by9"
+      style="background-image: url('/assets/images/cafemoa.png'); background-size: cover;"
+    ></div>
   </div>
   <div class="column has-text-left-desktop has-text-left-tablet">
     <h1 class="title is-size-4-touch"></h1>
@@ -132,11 +301,19 @@
         </br>
         Published on
         <span class="has-text-weight-semibold"
-          >{{ post.date | date: "%-B %d, %Y" }}</span
-        ></span
-      >
-      | <i class="fas fa-clock"></i>
-      <span class="has-text-weight-semibold"> github </span>
+          >2023년 02월</span
+        >
+        | <i class="fas fa-clock"></i>
+        <span class="has-text-weight-semibold"> github </span>
+      </span>
     </div>
   </div>
 </div>
+</a>
+
+<style>
+#blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+</style>
